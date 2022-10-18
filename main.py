@@ -6,7 +6,7 @@ def pot_recursiva(num1, num2):
 
 def validacion(num):
     while not(num.isnumeric()):
-        print('Ingrese valido')
+        print('Ingrese numero valido')
         num=(input("ingrese el numero\n"))
     else:
         return int(num)
@@ -15,7 +15,7 @@ calc=True
 while calc==True:
       num1=validacion(input('Ingrese primer numero '))        
       num2=validacion(input('Ingrese segundo numero '))
-      operador=input('Ingrese el operador:(+,-,*,/,**,***) ')
+      operador=input('Ingrese el operador: " + , - , * , / , ** , *** ": ')
       while operador not in('+','-','*','/','**','***'):
             print('Ingresa un operador válido')
             operador=input('Ingrese el operador: ')
